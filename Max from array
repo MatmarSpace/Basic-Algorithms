@@ -1,0 +1,23 @@
+#include <iostream>  
+using namespace std;  
+
+int arrayBeginning;
+int arrayEnd;
+int arrayToFindMax[];
+
+int max(int arrayToFindMax[])  
+{  
+    int max = arrayToFindMax[arrayBeginning];
+    while(arrayBeginning<arrayEnd)
+    {
+        arrayBeginning++;
+        if(arrayToFindMax[arrayBeginning]>max)
+            max=arrayToFindMax[arrayBeginning];
+    }
+    return max;
+}
+
+int main()
+{
+    cout<<max(arrayToFindMax);
+}

@@ -1,0 +1,57 @@
+#include <iostream>  
+using namespace std;  
+
+int n, x, i, j, saved;  
+
+int main ()  
+{  
+    //[ENG] Read array
+    //[PL] Wczyuje tablicę
+    cin >> n;  
+    int a[n];  
+    for (x = 1; x <= n; x++)  
+    {  
+        cin >> a[x];  
+    }
+     
+    //[ENG] Insertion sort
+    //[PL] Sortowanie przez wstawianie
+    for (i = 1; i <= n; i++)
+    {
+        j=i;  
+        saved = a[j + 1];  
+        while (saved<a[j] && j>=1 && j<n) 
+        {  
+            a[j + 1] = a[j];  
+            j--;
+            
+            //[ENG] Debug (display array during sort)
+            //[PL] Debut (wyświetla tabicę podczas sortowania)
+            cout << "-----------------" << endl;  
+            for (x = 1; x <= n; x++)  
+            {  
+                cout << a[x] << " ";  
+            } cout<<""<<endl; 
+        }  
+        a[j+1] = saved;
+        
+        //[ENG] Debug (display array during sort)
+        //[PL] Debut (wyświetla tabicę podczas sortowania)
+        cout << "-----------------" << endl;  
+            for (x = 1; x <= n; x++)  
+            {  
+                cout << a[x] << " ";  
+            } cout<<""<<endl; 
+    }  
+
+
+    //[ENG] Display sorted array
+    //[PL] Wyświetla posortowaną tablicę
+    cout << "==================" << endl;  
+    for (x = 1; x <= n; x++)  
+    {  
+        cout << a[x] << " ";  
+    }  
+    
+    return 0;  
+} 

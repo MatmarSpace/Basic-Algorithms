@@ -1,3 +1,3 @@
-# Basic-Algorithms
+# Basic-Algorithms ¯\_(ツ)_/¯
 Basic algorithms for school purpouse...
 Feel free to use them for whatever you want. :)
